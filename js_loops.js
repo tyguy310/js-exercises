@@ -67,19 +67,13 @@
 //         console.log(i);
 // }
 
-// 3&5 multiples sum
-var sum = 0
-for(i=1; i<1000; i++)  {
-  if(i%3 === 0 || i%5 ===0)
-  sum +=i;
-}
-console.log(sum);
-// for(j=0; j<1000; j+=5)  {
-//   five += j;
+// // 3&5 multiples sum
+// var sum = 0
+// for(i=1; i<1000; i++)  {
+//   if(i%3 === 0 || i%5 ===0)
+//   sum +=i;
 // }
-// console.log(three);
-
-
+// console.log(sum);
 
 // // # triangle
 // for (i = "#"; i.length < 7; i += "#")
