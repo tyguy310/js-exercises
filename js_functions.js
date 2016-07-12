@@ -81,26 +81,26 @@
 // console.log(isDivisible(105,4));
 
 
-// // 7.
-// function oddNumbers(digit) {
-//
-//   if (digit > 100 || digit < 0) {
-//     console.log("Enter a number between 0 and 100");
-//   }
-//
-//   else if (digit < 40 && digit >= 0) {
-//     for(i = 1; i < 40; i += 2)  {
-//       console.log(i);
-//     }
-//   }
-//
-//   else {
-//     for(j = 41; j < digit; j += 2)  {
-//       console.log(j);
-//     }
-//   }
-// }
-//
-// oddNumbers(-1);
-// oddNumbers(67);
-// oddNumbers(25);
+// 7.
+function oddNumbers(digit) {
+
+  if (digit > 100 || digit < 0) {
+    console.log("Enter a number between 0 and 100");
+  }
+
+  else if (digit < 40 && digit >= 0) {
+    for(i = 1; i < 40; i += 2)  {
+      console.log(i);
+    }
+  }
+
+  else {
+    for(j = 41; j <= digit; j += 2)  {
+      console.log(j);
+    }
+  }
+}
+
+oddNumbers(-1);
+oddNumbers(67);
+oddNumbers(25);
