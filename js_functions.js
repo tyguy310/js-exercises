@@ -83,8 +83,11 @@
 
 // 7.
 function oddNumbers(digit) {
+  if (!Number.isInteger(digit)) {
+    console.log("Enter a whole number between 0 and 100");
+  }
 
-  if (digit > 100 || digit < 0) {
+  else if (digit > 100 || digit < 0) {
     console.log("Enter a number between 0 and 100");
   }
 
@@ -102,5 +105,7 @@ function oddNumbers(digit) {
 }
 
 oddNumbers(-1);
-oddNumbers(67);
+oddNumbers(41);
 oddNumbers(25);
+oddNumbers(2.5);
+oddNumbers('three');
