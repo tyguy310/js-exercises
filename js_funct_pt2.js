@@ -9,24 +9,12 @@
 // //
 // //
 // 1.
-//function oldestPerson() {
+
 var people = {Chuck: 22, Brian: 46, Dave: 84, Nick: 63};
 
-for (var key in people) {
-  var oldest = 0;
-  var person = 0;
-  for(var i = 0; i < people.length; i++)  {
-    if(oldest < people[key]) {
-      oldest = people[i];
-      //person = people[i]
-    }
-    return oldest;
-  }
+function oldestPerson ()  {
+  
 }
-console.log(oldest);
-//}
-//console.log(oldestPerson());
-//
 //
 // // 2.
 // function longestWord(string)  {

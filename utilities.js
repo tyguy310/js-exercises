@@ -1,12 +1,24 @@
-function max(array) {
-  var maximum = 0;
+function max(array, callback) {
+  var maximum = array[0];
   for (var i = 0; i < array.length; i++)  {
     if (maximum < array[i]) {
       maximum = array[i];
     };
-  // var highest = Math.max(array);
-  // return highest;
+  }
+  return callback(maximum);
 }
-return maximum;
+
+function min(array, callback) {
+  var minimum = array[0];
+  for (var i = 0; i < array.length; i++)  {
+    if (minimum > array[i]) {
+      minimum = array[i];
+    };
+  }
+  return callback(minimum);
 }
-console.log(max([2,3,4,5,6]));
+
+module.exports = {
+  max: max,
+  min: min
+};
