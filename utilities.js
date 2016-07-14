@@ -18,6 +18,14 @@ function min(array, callback) {
   return callback(minimum);
 }
 
+function each(array, fn) {
+  newArray = [];
+  for (var i = 0; i < array.length; i++)  {
+    newArray.push(fn(array[i]));
+  }
+  return newArray;
+}
+
 module.exports = {
   max: max,
   min: min
